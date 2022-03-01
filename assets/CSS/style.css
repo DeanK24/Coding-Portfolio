@@ -6,3 +6,13 @@
 body {
     font-family: 'Times New Roman', Times, serif;
 }
+header {
+    padding: 10px 50px 20px;
+    background-color: dimgrey;
+    font-weight: bolder;
+}
+header a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
