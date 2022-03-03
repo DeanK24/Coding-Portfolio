@@ -2,55 +2,72 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dean Ketchmark's Portfolio</title>
         <link rel="stylesheet" href="./assets/CSS/style.css">
         
     </head>
     <body>
-        <header>
-            <h1><a href="index.html">Dean Ketchmark</a></h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about-me">About me</a>
-                    </li>
-                    <li>
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact-me">Contact me</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+    <header>
+        <h1><a href="index.html" class="home">Dean Ketchmark</a></h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about-me">About me</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact-me">Contact me</a>
+                </li>
+                <li><a href="#">Hire me</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <section>
-            <div>
-                <h2>
+        <section id="about-me" class="intro">
+            <div class="flex-row">
+                <h2 class="section-title primary border">
                     About me
                 </h2>
             </div>
             <div>
+                <h2 class="elementor-heading-title elementor-size-default">
+                    Hello, my name is Dean Ketchmark
+                </h2>
+                <div>
+                    <img src="/assets/Images/pure-css-site-scroll-micro-animation.gif" alt="scroll wheel">
+                </div>
+            <div>
+            <div class="flex-row">
                 <p>
-                    My name is Dean Ketchmark, I am from Fort Myers, Florida. I am currentely a student in UCF Coding Bootcamp and am loving it.
-                    I've never been fond of school but I've loved technology and video games. Finally I found this program and couldnt be more excited about it.
+                    I am from Fort Myers, Florida. I am currentely a student in UCF Coding Bootcamp and am loving it.
+                    I've never been fond of school but I've loved technology and video games. Finally, I found this program and couldnt be more excited about it.
                     I am a very active person. I love to go to the gym and go on walks through the park with my dog Cooper and my girlfriend.
                 </p>
             </div>
+            </div>
         </section>
 
-        <section>
-            <div>
-                <h2>
+        <section id="projects" class="projects">
+            <div class="flex-row">
+                <h2 class="section-title secondary-border">
                     Projects
                 </h2>
+            <div class="runbuddy">
+                <form>
+                    <label for="Run-Buddy">Run-Buddy</label>
+                    <input type="text" id="Run-Buddy" placeholder="">
+                </form>
+            </div>
             </div>
         </section>
 
         <section>
             <div>
                 <h2>
-                    Contact me
+                    Reach Out!!
                 </h2>
             </div>
             <div>
@@ -59,6 +76,31 @@
                     E: <a  href="mailto:Deank242@gmail.com">Deank242@gmail.com</a>
                 </address>
             </div>
+
+            <div class="contact-form">
+                <h3>
+                    Contact me
+                </h3>
+                <form>
+                    <label for="contact-name">Your name</label>
+                    <input type="text" id="contact-name" placeholder="Your Name" />
+
+                    <label for="contact-email">Your E-mail</label>
+                    <input type="text" id="contact-email" placeholder="Your Email" />
+                    
+                    <label for="question">Question?</label>
+                    <input type="text" id="question" placeholder="Ask any question" />
+                </form>
+            </div>
         </section>
+
+        <footer>
+            <div class="social-header">
+               <ul>
+                   <li><a href="images/linkedin.png" alt="linked in"></a></li>
+                   <li><a href=""></a></li>
+               </ul>
+            </div>
+        </footer>
     </body>
 </html>
