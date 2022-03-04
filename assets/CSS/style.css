@@ -21,6 +21,9 @@ header {
     font-size: 20px;
     padding: 50px;
 }
+#header-border {
+    border: 3px solid black;
+}
 header h1 {
     font-weight: bold;
     font-size: 36px;
@@ -99,11 +102,16 @@ p {
     font-size: 80px;
     line-height: 85px;
     letter-spacing: -2.5px;
-    padding: 250px;
-    margin: 0;
+    padding: 150px;
+    margin: 0 20px;
     font-weight: 400;
     text-align: center;
+    /* position: -ms-page; */
+    top: 50px;
+
 }
+
+
 div {
     display: block;
 }
@@ -125,9 +133,10 @@ div {
     text-transform: uppercase;
     font-weight: bold;
     color: black;
-    letter-spacing: .2em;
-    font-size: 2em;
+    letter-spacing: .5em;
+    font-size: 48px;
     text-decoration: underline;
+    padding-bottom: 100px;
     
 }
 .featured-title {
@@ -145,3 +154,39 @@ div {
     line-height: 1.8em;
     font-weight: 500; */
 
+    .contact-form input, .contact-form textarea {
+        border: 1px solid var(--secondary-color);
+        display: block;
+        padding: 7px 15px;
+        font-size: 16px;
+        color: var(--secondary-color);
+        width: 100%;
+        margin-bottom: 15px;
+        margin-top: 5px;
+        border-radius: 10px;
+        background-color: rgba(255,255,255, 0.75);
+    }
+    .contact-form input:focus, .contact-form textarea:focus {
+        background-color: rgba(255,255,255, 1);
+        outline: none;
+    }
+    .contact-form button {
+        width: 100%;
+        border: none;
+        background: var(--primary-color);
+        color: var(--secondary-color);
+        text-align: center;
+        padding: 15px 0;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+    .project-1 {
+        padding: 10px 20px;
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 auto;
+        top: 25px;
+        position: relative;
+        height: 650px;
+        width: 650px;
+    }
