@@ -20,10 +20,10 @@ header {
     text-align: center;
     font-size: 20px;
     padding: 50px;
+    border: 5px solid black;
+
 }
-#header-border {
-    border: 3px solid black;
-}
+
 header h1 {
     font-weight: bold;
     font-size: 36px;
@@ -54,11 +54,17 @@ header nav ul li a {
     font-size: 1.5vw;
     color: dimgray
 }
-header nav ul li a:hover {
+/* header nav ul li a:hover {
+    background: var(white);
+    color: var(rgba(255,255,255, 0.75));
     border-radius: 15px;
-}
+    text-shadow: none;
+} */
 h2 {
     color: black;
+}
+h3 {
+    padding-top: 50px;
 }
 section {
     background-color: dimgrey;
@@ -81,6 +87,10 @@ h2 {
     font-size: 20px;
     text-align: center;
     margin: 0 auto;
+}
+h3 {
+    color: #fff;
+    font-size: 50px;
 }
 p {
     line-height: 1.7;
@@ -180,6 +190,38 @@ div {
         font-size: 16px;
         border-radius: 10px;
     }
+    .contact-info div {
+        color: white;
+    }
+    .contact-info {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .contact-info > * {
+        flex: 1;
+        margin: 15px;
+    }
+      
+    .contact-info h3 {
+        color: var(--primary-color);
+        font-size: 32px;
+    }
+      
+    .contact-info p, .contact-info address {
+        margin: 20px 0;
+        line-height: 1.5;
+        font-size: 16px;
+        font-style: normal;
+    }
+    .section-title2 {
+        font-size: 48px;
+        border-bottom: 3px solid;
+        padding-bottom: 20px;
+        text-align: center;
+        margin: 0 auto 35px auto;
+        width: 50%;
+    }
     .project-1 {
         padding: 10px 20px;
         text-decoration: none;
@@ -190,3 +232,116 @@ div {
         height: 650px;
         width: 650px;
     }
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    footer {
+        font-size: 10px;
+        margin: 0;
+    }
+    /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    header nav ul li a {
+        font-size: 20px;
+    }
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+    .hero-cta .hero-form {
+        width: 100%;
+    }
+    .hero-cta {
+        text-align: center;
+    }
+    .section-title {
+        width: 80%;
+    }
+    .trainer {
+        flex: 0 70%;
+    }
+    .contact-info iframe {
+        flex: 1 100%;
+    }
+   }
+   
+   /* MEDIA QUERY FOR TABLETS AND SMALLER */
+   @media screen and (max-width: 768px) {
+     header h1 {
+       /* this will be applied on any screen between 768px and 575px */
+       font-size: 80px;
+     }
+     section {
+         padding: 30px 15px;
+     }
+     .steps h3 {
+         flex: 1 100%;
+         text-align: center;
+     }
+     .steps-info {
+         flex: 2 100%;
+         text-align: center;
+         justify-content: center;
+     }
+     .steps-img {
+         flex: 0 32%;
+         margin-right: 0;
+         margin-top: 15px;
+         margin-bottom: 15px;
+     }
+     .steps-text {
+         flex: 100%;
+     }
+   }
+   
+   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+   @media screen and (max-width: 575px) {
+     header h1 {
+       /* this will be applied on any screen smaller than 575px */
+       font-size: 100px;
+     }
+     .hero-form button {
+         width: 100%;
+       }
+     
+       .section-title {
+         width: 95%;
+       }
+     
+       .intro p {
+         width: 100%;
+       }
+     
+       .trainer {
+         flex: 0 100%;
+       }
+     
+       .contact-info {
+         text-align: center;
+       }
+     
+       .contact-info > * {
+         flex: 0 100%;
+       }
+       .contact-form {
+           order: 3;
+       }
+   }
+    
