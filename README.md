@@ -14,7 +14,7 @@ Click on the following link to visit.
 
 Provide instructions and examples for use. Include screenshots as needed.
   
-![Screenshot](/assets/images/Portfolio-screenshot.png)
+![Screenshot](/assets/Images/Portfolio-screenshot.png)
 
 
 ## Credits
