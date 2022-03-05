@@ -15,10 +15,10 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: sticky;
+    /* position: sticky; */
     font-weight: bolder;
     text-align: center;
-    font-size: 20px;
+    /* font-size: 20px; */
     padding: 50px;
     border: 5px solid black;
 
@@ -26,7 +26,7 @@ header {
 
 header h1 {
     font-weight: bold;
-    font-size: 36px;
+    font-size: 1.5vw;
     padding-top: 20px;
     text-align: center;
     padding-left: 75px;
@@ -63,6 +63,16 @@ header nav ul li a {
 h2 {
     color: black;
 }
+.avatar {
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 auto;
+    top: 25px;
+    position: relative;
+    height: 650px;
+    width: 650px;
+}
 h3 {
     padding-top: 50px;
 }
@@ -94,7 +104,7 @@ h3 {
 }
 p {
     line-height: 1.7;
-    width: 100%;
+    width: 60%;
     font-size: 20px;
     margin: 0 auto;
     text-align: center;
@@ -265,19 +275,16 @@ div {
         text-align: center;
         width: 100%;
     }
-    .hero-cta .hero-form {
+    .avatar {
         width: 100%;
     }
-    .hero-cta {
+    .avatar {
         text-align: center;
     }
     .section-title {
         width: 80%;
     }
-    .trainer {
-        flex: 0 70%;
-    }
-    .contact-info iframe {
+    .contact-info {
         flex: 1 100%;
     }
    }
